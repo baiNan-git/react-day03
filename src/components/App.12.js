@@ -21,14 +21,7 @@ class App extends Component {
       <ul>
         {
           this.state.list.map(item => {
-            return (<li key = { item.id } style={
-              {
-                width: '100%',
-                height:'30px',
-                lineHeight: '30px',
-                borderBottom: '1px solid #ccc'
-              }
-            }>{ item.title }</li>)
+            return (<li key = { item.id } className= 'list'>{ item.title }</li>)
           })
         }
       </ul>
